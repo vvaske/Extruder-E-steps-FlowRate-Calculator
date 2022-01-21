@@ -112,7 +112,8 @@ namespace ExtruderEstepsCalculator
                 num1 = double.Parse(txtcurrent.Text);
                 num2 = double.Parse(txtreal.Text);
                 sum = num1 / num2 * 100;
-                txtnew.Text = Convert.ToString(sum).Substring(0, 5).Trim();
+                //txtnew.Text = Convert.ToString(sum).Substring(0, 5).Trim();
+                txtnew.Text = Convert.ToString(sum);
             }
         }
 
