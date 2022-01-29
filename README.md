@@ -3,7 +3,7 @@ Please build the executable yourself or decompile the existing one if you don't 
 
 Extruder E-steps & FlowRate Calculator by VASKE is easy tool to correct the STEPS/MM of your 3D Printer especially in case if you doing upgrade from Bowden tube to Direct Drive and also to fix flowrate
 
-How Extruder E-Steps calculator works?
+# How Extruder E-Steps calculator works?
 
 Steps for Extruder E-Steps fix:
 
@@ -15,8 +15,9 @@ Now measure the remaining filament of the edge to the mark
 
 Use only PET-G or PLA filament for this
 
+===============================================================================
 
-How FlowRate calculator works?
+# How FlowRate calculator works?
 
 Flow Rate Calculation:
 
