@@ -201,16 +201,12 @@ namespace ExtruderEstepsCalculator
         private void btnEsteps_Click(object sender, EventArgs e)
         {
             double num1, num2, num3, sum, sum1;
-            num1 = double.Parse(txtcurrent.Text);//current steps Creality have 93mm by default
-            num2 = double.Parse(txtreal.Text);//Filament length 100mm 
-            num3 = double.Parse(txtmeasured.Text);//there we have 10mm left - so 90mm from our measured 100mm is extruded
+            num1 = double.Parse(txtcurrent.Text);
+            num2 = double.Parse(txtreal.Text);
+            num3 = double.Parse(txtmeasured.Text);
 
-            //formula
-            //100 / 90 = 1.11
-            //1.11 * 93 = 103.33
-            //103.33 (104) new esteps
-            sum1 = num2 - num3;
-            sum = num2 / sum1 * num1;
+            sum1 = num2 * num1;
+            sum = sum1 / num3;
             txtnew.Text = Convert.ToString(sum);
         }
     }
